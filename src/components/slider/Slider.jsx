@@ -22,7 +22,7 @@ function SampleNextArrow(props) {
         alignItems: "center",
         position: "absolute",
         
-        top: "35%",
+        bottom:"50%",
       }}
       onClick={onClick} >
       <IoIosArrowForward />

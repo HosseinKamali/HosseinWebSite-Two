@@ -8,13 +8,14 @@ const Header = () => {
   const { ref: two, inView: imageTwoin } = useInView();
 
   return (
-    <Container>
+    <div className="bg-fixed bg-cover h-screen overflow-x-hidden max-sm:h-[80vh] flex justify-center items-center"  style={{
+      backgroundImage: `url(${imageOne})`,
+      backgroundPosition: "center",
+    }}>
+ <Container>
       <div
-        className="w-full h-screen max-sm:h-[80vh] bg-cover bg-fixed flex flex-col justify-center items-center "
-        style={{
-          backgroundImage: `url(${imageOne})`,
-          backgroundPosition: "center",
-        }}
+        className="  flex flex-col justify-center items-center "
+      
       >
         <h1 className=" text-[280px] font-semibold text-amber-200 leading-[300px] max-sm:text-7xl">
           Re.vert
@@ -27,6 +28,8 @@ const Header = () => {
         </button>
       </div>
     </Container>
+    </div>
+   
   );
 };
 

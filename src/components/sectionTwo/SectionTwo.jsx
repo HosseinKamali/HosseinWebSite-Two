@@ -7,22 +7,17 @@ const SectionTwo = () => {
 
     return (
         <Container>
-           <div>
+           <div className="max-sm:mt-24">
             <h2 className="text-center mt-10 text-4xl font-semibold text-[#1f2227]">Shop Collections</h2>
-           <div className="flex h-96 justify-around items-center mt-8">
+           <div className="flex h-96 justify-around items-center mt-8 max-sm:flex-col max-sm:h-[1000px]">
                 
                 {card.map((item, index) => {
                     return (
                         <div
-                            className="relative flex flex-col justify-center items-center rounded-3xl text-amber-300 overflow-hidden cursor-pointer"
-                            key={index}
-                            style={{
-                                width: '360px',
-                                height: '360px',
-                            }} >
+                            className="relative w-[360px] h-[360px] flex flex-col justify-center items-center rounded-3xl text-amber-300 overflow-hidden cursor-pointer mb-8"
+                            key={index} >
                             
-                            <div
-                                className="absolute  inset-0 rounded-3xl bg-cover bg-center transition-transform duration-500 ease-in-out hover:scale-125"
+                            <div className="absolute  inset-0 rounded-3xl bg-cover bg-center transition-transform duration-500 ease-in-out hover:scale-125"
                                 style={{
                                     backgroundImage: `url(${item.imageUrl})`,
                                     filter: "brightness(0.6)"

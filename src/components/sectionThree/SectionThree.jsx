@@ -5,16 +5,16 @@ import Container from "../container/Container";
 const SectionThree = () => {
   const [icon, setIcon] = useState(icons);
   return (
-    <div className="mt-28 h-[850px] bg-gray-200 text-center text-gray-600 pt-10 pb-10">
+    <div className="mt-28 h-auto bg-gray-200 text-center text-gray-600 pt-10 pb-10">
         <Container>
         <h2 className="text-center text-5xl font-semibold  mb-12">The Re.vert Mission</h2>
       <p className="text-center text-xl ">
         We believe in ethical and smart shopping. All of our products are
         carefully<br/> selected to ensure they align with our core values
       </p>
-      <div className="flex justify-around items-center mt-24">
+      <div className="flex justify-around items-center mt-24 flex-wrap">
       {icons.map((icon, index) => (
-        <div key={index} className="flex flex-col justify-center items-center">
+        <div key={index} className="flex flex-col justify-center items-center max-sm:w-[30%] mb-6">
             <div className="rounded-full border-2 border-gray-700 p-4 mb-4">
             <img src={icon.svg} alt="" className="w-14 h-14 p-1"/>
             </div>
@@ -24,7 +24,7 @@ const SectionThree = () => {
       ))}
     </div>
         </Container>
-        <div className="w-[60%] mx-auto mt-20 text-base">
+        <div className="w-[60%] mx-auto mt-20 max-sm:mt-1 text-base">
         <p>I'm a paragraph. Click here to add your own text and edit me.It’s easy. Just click “Edit Text” or double click me 
         to add your own  content and make changes to the font. Feel free to drag and drop me anywhere you like on your page.
          I’m a great place for you to tell a story and let your users know a little more about you.</p>

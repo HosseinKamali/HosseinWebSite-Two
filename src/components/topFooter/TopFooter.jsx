@@ -24,7 +24,7 @@ function SampleNextArrow(props) {
           alignItems: "center",
           position: "absolute",
           
-          top: "34%",
+          bottom:"55%"
         }}
         onClick={onClick} >
         <IoIosArrowForward />
@@ -43,7 +43,7 @@ function SampleNextArrow(props) {
          justifyContent: "right",
          alignItems: "center",
          position:"absolute",
-         bottom:"54%",
+         bottom:"55%",
          
          zIndex:"1",
          
@@ -80,9 +80,9 @@ const TopFooter = () => {
             {
               breakpoint: 600,
               settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                initialSlide: 2
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                initialSlide: 1
               }
             },
             {
@@ -101,7 +101,7 @@ const TopFooter = () => {
             <h3 className="text-2xl text-center text-gray-700 font-semibold">Follow Us</h3>
             <h2 className="text-gray-700 font-semibold text-center text-6xl ">Re.vert</h2>
 
-            <div className="mx-[200px] mt-8 mb-28">
+            <div className="sm:mx-[200px] max-sm:mx-[50px] mt-8 mb-28">
               <div>
                 <Slider {...settings}>
                   {product.map((item, index) => (
