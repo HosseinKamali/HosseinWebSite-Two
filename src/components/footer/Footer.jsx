@@ -13,7 +13,7 @@ const [fproduct,setFProduct]=useState(footerproduct)
 const [footerItem,setFooterItem]=useState(footer)
 
   return (
-    <div className="bg-[#e8e59b] h-auto">
+    <div className="bg-[#e8e59b] h-auto overflow-x-hidden">
       <TopFooter />
       
       <Container>

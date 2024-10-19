@@ -9,7 +9,7 @@ const Header = () => {
     "https://nurmecosmetics.com/wp-content/uploads/2021/02/10-reasons-to-love-bar-soap.jpg";
 
   return (
-    <div className="relative inset-0 h-screen">
+    <div className="relative inset-0 h-screen overflow-x-hidden">
       {/* Background Image Div */}
       <div
         className="absolute bg-fixed bg-cover h-full w-full max-sm:h-[80vh] flex justify-center items-center"

@@ -7,7 +7,7 @@ const SectionTwo = () => {
 
     return (
         <Container>
-           <div className="max-sm:mt-24">
+           <div className="max-sm:mt-24 overflow-x-hidden">
             <h2 className="text-center mt-10 text-4xl font-semibold text-[#1f2227]">Shop Collections</h2>
            <div className="flex h-96 justify-around items-center mt-8 max-sm:flex-col max-sm:h-[1000px]">
                 
