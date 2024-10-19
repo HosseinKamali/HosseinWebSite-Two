@@ -1,6 +1,7 @@
 import Container from "../container/Container";
-import image from "../../assets/image/10.jpg"
+
 const SectionOne = () => {
+  const image ="https://static.wixstatic.com/media/c837a6_7525c017b9c54e089583eee948271588~mv2.jpg/v1/crop/x_209,y_1448,w_4040,h_3568/fill/w_541,h_478,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/shutterstock_2005823990.jpg"
   return (
     <div className="bg-[#1f2227] sm:mt-20 h-[800px]  sm:flex sm:justify-center sm:items-center ">
  <Container>

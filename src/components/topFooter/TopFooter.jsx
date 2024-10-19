@@ -96,29 +96,33 @@ const TopFooter = () => {
         };
       
         return (
-          <Container>
+          <>
+             <Container>
             <div className="p-10">
             <h3 className="text-2xl text-center text-gray-700 font-semibold">Follow Us</h3>
             <h2 className="text-gray-700 font-semibold text-center text-6xl ">Re.vert</h2>
 
-            <div className="sm:mx-[200px] max-sm:mx-[50px] mt-8 mb-28">
+            <div className="sm:mx-[200px] max-sm:mx-[50px] mt-8 mb-1">
               <div>
                 <Slider {...settings}>
                   {product.map((item, index) => (
                     <div key={index} >
                       <Card
                         image={item.imageUrl}
-                        title={item.title}
-                        price={item.price}
+                        
                       />
                     </div>
                   ))}
                 </Slider>
               </div>
             </div>
+           
             </div>
-          
+           
           </Container>
+           <hr className="bg-black h-[2px] w-full"/>
+          </>
+       
     );
 }
  
