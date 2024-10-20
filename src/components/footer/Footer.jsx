@@ -6,6 +6,7 @@ import { footer } from "../../../data/data";
 import { useState } from "react";
 import Container from "../container/Container";
 import SosialMedia from "../sosialMedia/SosialMedia";
+import CustomCheckbox from "../custonCheckbox/CustomCheckbox";
 
 const Footer = () => {
 const [fnavbar,setFNavbar]=useState(navbar)
@@ -31,10 +32,12 @@ const [footerItem,setFooterItem]=useState(footer)
            </div>
             <div className="flex flex-col items-start mt-10">
               <label htmlFor="">Email</label>
-              <input type="email" className="mb-5 w-[400px] py-2 px-2 outline-none bg-[#e8e59b] border-b-[1px] border-black focus:bg-[#cdcb8e]"/>
-              <div className="flex justify-between items-center  w-[400px] mt-5">
-              <input type="checkbox" />
-              <span>Yes, subscribe me to your newsletter.</span>
+              <input type="email" className="mb-5 w-[450px] py-2 px-2 outline-none bg-[#e8e59b] border-b-[1px] border-black focus:bg-[#cdcb8e]"/>
+              <div className="flex items-center justify-between  w-[450px] mt-5">
+             <div className="flex items-center">
+             <CustomCheckbox/>
+             <span className="ml-2">Yes, subscribe me to your newsletter.</span>
+             </div>
               <button className=" py-2 px-6 rounded-3xl border-[1px] border-gray-800 text-xl">Submit</button>
               </div>
              
