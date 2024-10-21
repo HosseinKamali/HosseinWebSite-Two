@@ -32,8 +32,8 @@ const [footerItem,setFooterItem]=useState(footer)
            </div>
             <div className="flex flex-col items-start mt-10">
               <label htmlFor="">Email</label>
-              <input type="email" className="mb-5 w-[450px] py-2 px-2 outline-none bg-[#e8e59b] border-b-[1px] border-black focus:bg-[#cdcb8e]"/>
-              <div className="flex items-center justify-between  w-[450px] mt-5">
+              <input type="email" className="mb-5 w-[420px] py-2 px-2 outline-none bg-[#e8e59b] border-b-[1px] border-black focus:bg-[#cdcb8e]"/>
+              <div className="flex items-center justify-between  w-[420px] mt-5">
              <div className="flex items-center">
              <CustomCheckbox/>
              <span className="ml-2">Yes, subscribe me to your newsletter.</span>
