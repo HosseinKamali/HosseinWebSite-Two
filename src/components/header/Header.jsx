@@ -6,13 +6,13 @@ const Header = () => {
   const { ref: two, inView: imageTwoin } = useInView();
 
   const imageOne =
-    "https://nurmecosmetics.com/wp-content/uploads/2021/02/10-reasons-to-love-bar-soap.jpg";
+    "https://greencitizen.com/wp-content/uploads/2022/07/natural-soap-bars-1.jpg";
 
   return (
     <div className="relative inset-0 h-screen overflow-x-hidden">
       {/* Background Image Div */}
       <div
-        className="absolute bg-fixed bg-cover h-full w-full max-sm:h-[80vh] flex justify-center items-center"
+        className="absolute bg-fixed bg-cover  h-full w-full max-sm:h-[80vh] flex justify-center items-center"
         style={{
           backgroundImage: `url(${imageOne})`,
           backgroundPosition: "center",
